@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.App-server-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  margin: 16px;
+  border: 1px solid #dadada;
+}
+
+.App-server-buttons button {
+  margin: 4px;
+  background: darkseagreen;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.App-server-buttons button:hover {
+  background-color: darkolivegreen;
+}
+
+.App-server-buttons button.active {
+  background-color: darkgoldenrod;
+}
+
+.App-server-buttons button:disabled,
+.App-server-buttons button.active:disabled {
+  opacity: 0.4;
+  cursor: default;
+  background: darkseagreen;
+}
+
+.App-server-buttons button:disabled:hover,
+.App-server-buttons button.active:disabled:hover {
+  background: darkseagreen;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
